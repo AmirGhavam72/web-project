@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Question 3</title>
+    </head>
+    
+    <body>
+        <table id="myTable">
+            <tbody>
+                <tr>
+                    <td>Student Number</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td colspan="2">Age</td>
+                </tr>
+                <tr>
+                    <td>90909090</td>
+                    <td>Steven</td>
+                    <td>Wilson</td>
+                    <td colspan="2">46</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="stNum" type="text"></td>
+                    <td>
+                        <input id="fName" type="text"></td>
+                    <td>
+                        <input id="lName" type="text"></td>
+                    <td>
+                        <input id="age" type="text"></td>
+                    <td>
+                        <input onclick="Add()" type="button" value="Add"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <script>
+            var n = 2;
+            function Add() {
+                var table = document.getElementById("myTable");
+                var row = table.insertRow(n);
+                var c1 = row.insertCell(0);
+                var c2 = row.insertCell(1);
+                var c3 = row.insertCell(2);
+                var c4 = row.insertCell(3);
+                c1.innerHTML = document.getElementById("stNum").value;
+                c2.innerHTML = document.getElementById("fName").value;
+                c3.innerHTML = document.getElementById("lName").value;
+                c4.innerHTML = document.getElementById("age").value;
+                document.getElementById("stNum").value = "";
+                document.getElementById("fName").value = "";
+                document.getElementById("lName").value = "";
+                document.getElementById("age").value = "";
+                n += 1;
+            };
+        </script>
+
+    </body>
+</html>

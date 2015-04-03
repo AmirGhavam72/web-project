@@ -1,0 +1,138 @@
+body{
+    background-image: url("../img/congruent_outline.png");
+}
+#div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+#header{
+    font-family: 'Cabin Condensed', cursive;
+    background-color: black;
+    border: 5px ridge blue;
+    border-radius: 15px;
+}
+#header1{
+    color: blue;
+    text-align: center;
+}
+#header2{
+    color: blue;
+    text-align: center; 
+}
+#header3{
+    font-family: cursive;
+    border: 3px dotted red;
+    border-radius: 9px;
+    background-color: black;
+    text-align: right;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+#article{
+    font-family: cursive;
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 10px;
+    background-color: black;
+    border: 5px ridge blue;
+    border-radius: 15px;
+    float: left;
+    color: blue;
+}
+#aside{
+    font-family: cursive;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 10px;
+    background-color: black;
+    border: 5px ridge blue;
+    border-radius: 15px;
+    float: right;
+    color: blue; 
+} 
+#amir{
+    width: 230px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.sections{
+    padding-left: 5px;
+    text-align: left;
+    margin-left: 4px;
+    margin-top: 18px;
+    border: 5px dashed red;
+    border-radius: 15px;
+}
+.links{
+    font-family: 'Lobster' , cursive;
+    font-size: 50px;
+    text-decoration: none; 
+    padding-left: 5px;
+    padding-top: 5px;
+    color: white;
+    
+}
+.links:hover{
+    color: darkred;
+}
+.images{
+    width: 657px;
+}
+.p1{
+    padding-left: 25px;
+}
+.times{
+    color: darkgray;
+    font-family: serif;
+    font-size: 16px;
+    text-align: center;
+}
+#table{
+    margin-left: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.trtype1{
+    background-color: gray;
+}
+.trtype2{
+    background-color: darkgray;
+}
+#allbnd{
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-left: 4px;
+    border: 3px dotted red;
+    border-radius: 9px;
+    text-align: center
+}
+
+#login{
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 2px;
+    margin-bottom: 6px;
+    border: 3px dotted red;
+    border-radius: 9px;
+    
+}
+#login2{
+    text-align: right;
+}
+.login3{
+    margin-left: 60PX;
+    margin-top: 3px;
+    width: 120px;
+}
+#login4{
+    margin-left: 95px;
+    margin-bottom: 4px;
+}
+

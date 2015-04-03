@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Question 1</title>
+    </head>
+    <body>
+        <input type="text">
+        <script>
+            var field = document.querySelector("input");
+            field.addEventListener("keypress" , onkeypress = isLegal);
+            function isLegal(evt) {
+                var charCode = (evt.which) ? evt.which : event.keyCode
+                if (charCode === 65 || charCode === 67 || charCode === 78 || charCode === 79 || charCode === 85)
+                    return false;
+                return true;
+            }
+        </script>
+    </body>
+</html>

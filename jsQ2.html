@@ -1,0 +1,36 @@
+<html>
+    
+    <head>
+        <title>JavaScript Question 2</title>
+    </head>
+    
+    <body>
+        
+        <div id="Square" style=" height: 50px ; width: 50px ; position: absolute ; top: 0px ; left: 0px ; background-color: yellow; "></div>
+        
+        <script>
+            var start = null;
+            var element = document.getElementById("Square");
+            element.addEventListener("click", mouseHandler);
+
+            function mouseHandler() {
+                window.requestAnimationFrame(step);
+            };
+
+            var leftStep = ((window.innerWidth-50)/5000);
+            var topStep = ((window.innerHeight-50)/5000);
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                var progress = timestamp - start;
+                element.style.left = Math.min(leftStep * progress , window.innerWidth-50);
+                element.style.top = Math.min(topStep * progress , window.innerHeight-50);
+                if (progress <= 5000) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+        </script>
+        
+    </body>
+    
+</html>
